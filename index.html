@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Java Quiz</title>
+    <meta name="description" content="This is a Java quiz web page" />
+  </head>
+  <body>
+    <header>
+      <h1>Java Quiz</h1>
+      <p>Test your Java skills!</p>
+    </header>
+    <main>
+      <!--Introduction-->
+      <section>
+        <h2>About the Java Quiz</h2>
+        <p>
+          <strong>Welcome to our Java quiz</strong>, a space created to test and
+          improve your knowledge of one of the world's
+          <em>most widely used programming languages.</em> <br />
+          Here, you'll find questions covering everything from basic concepts to
+          more advanced topics, allowing developers of all levels to learn in a
+          dynamic and interactive way.
+        </p>
+        <p>
+          The goal of this quiz is to make learning Java more engaging,
+          encouraging practice and logical reasoning. By answering the
+          questions, you can identify your strengths and areas that need more
+          attention, contributing to continuous improvement in your mastery of
+          the language.
+        </p>
+        <p>
+          Get ready to put your skills to the test, challenge your knowledge,
+          and have fun while learning. Some acronyms like
+          <abbr title="Object-Oriented Programming">OOP</abbr> and
+          <abbr title="Application Programming Interface">API</abbr> will be
+          used; this quiz was developed to provide an educational and
+          stimulating experience. Good luck!
+        </p>
+      </section>
+      <!--Question 1: multiple choice-->
+      <section>
+        <h2>Question 1: What is the Java programming language?</h2>
+        <form>
+          <input type="radio" value="A markup language used to structure web pages" id="p1a" name="question1"/>
+          <label for="p1a">A markup language used to structure web pages</label><br>
+          <input type="radio" value="An OOP and cross-platform programming language" id="p1b" name="question1"/>
+          <label for="p1b">An OOP and cross-platform programming language</label><br>
+          <input type="radio" value="An operating system developed by Oracle" id="p1c" name="question1"/>
+          <label for="p1c">An operating system developed by Oracle</label><br>
+          <input type="radio" value="A relational database used in enterprise applications" id="p1d" name="question1"/>
+          <label for="p1d">A relational database used in enterprise applications</label><br>
+        </form>
+      </section>
+      <!--Question 2: text-->
+      <section>
+        <h2>Explain what the JVM (Java Virtual Machine) is and what its role is in running Java programs.</h2>
+        <input type="text" id="p2" name="question2" placeholder="Type your answer here..."/>
+      </section>
+      <!--Question 3: password-->
+      <section>
+        <h2>Enter the keyword that represents the object-oriented programming principle responsible for hiding the internal details of a class:</h2>
+        <form>
+          <input type="password" id="p3" name="question3" placeholder="Type your answer here..."/>
+        </form>
+      </section>
+      <!--Question 4: date-->
+      <section>
+        <h2>Please provide the release date of the first official version of Java:</h2>
+        <form>
+          <input type="date" id="p4" name="question4"/>
+        </form>
+      </section>
+      <!--Question 5: checkbox-->
+      <section>
+        <h2>Which of the following are primitive data types in Java? (Select all correct options)</h2>
+        <form>
+          <input type="checkbox" value="int" id="p5a" name="question5"/>
+          <label for="p5a">int</label><br>
+          <input type="checkbox" value="String" id="p5b" name="question5"/>
+          <label for="p5b">String</label><br>
+          <input type="checkbox" value="double" id="p5c" name="question5"/>
+          <label for="p5c">double</label><br>
+          <input type="checkbox" value="boolean" id="p5d" name="question5"/>
+          <label for="p5d">boolean</label><br>
+          <input type="checkbox" value="ArrayList" id="p5e" name="question5"/>
+          <label for="p5e">ArrayList</label>
+        </form>
+      </section>
+      <!--Question 6: file-->
+      <section>
+        <h2>Please submit a file containing a Java code example that declares a class, creates a main method, and displays a message in the console.</h2>
+        <form>
+          <input type="file" id="p6" name="question6"/>
+        </form>
+      </section>
+      <!--Question 7: dropdown-->
+      <section>
+        <h2>Select from the menu below which structure is used in Java to repeat a block of code a specified number of times:</h2>
+        <form>
+          <select id="p7" name="question7">
+            <option value="if">if statement</option>
+            <option value="for">for loop</option>
+            <option value="switch">switch statement</option>
+            <option value="try-catch">try-catch block</option>
+          </select>
+        </form>
+      </section>
+      <!--Question 8: image-->
+      <section>
+        <h2>Observe the image below and identify which object-oriented programming concept in Java it represents:</h2>
+        <figure>
+          <img src="./assets/heranca.jpg" alt="A diagram showing an Animal class being extended by Horse and Lion"><br>
+          <figcaption>A image of a diagram showing an Animal class being extended by Horse and Lion</figcaption>
+        </figure>
+        <input type="radio" value="Encapsulation" id="p8a" name="question8"/>
+        <label for="p8a">Encapsulation</label><br>
+        <input type="radio" value="Inheritance" id="p8b" name="question8"/>
+        <label for="p8b">Inheritance</label><br>
+        <input type="radio" value="Polymorphism" id="p8c" name="question8"/>
+        <label for="p8c">Polymorphism</label><br>
+        <input type="radio" value="Abstraction" id="p8d" name="question8"/>
+        <label for="p8d">Abstraction</label>
+      </section>
+      <!--Scoring Table-->
+      <section>
+        <h2>Scoring Table</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Score</th>
+              <th>Assessment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0-2</td>
+              <td>Don't give up.</td>
+            </tr>
+            <tr>
+              <td>3-5</td>
+              <td>Keep practicing.</td>
+            </tr>
+            <tr>
+              <td>6-7</td>
+              <td>Good job!</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Excellent! You're a Java master!</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Good luck on your next attempt!</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <!--List of answers-->
+      
+    </main>
+    <footer></footer>
+  </body>
+</html>
