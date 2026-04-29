@@ -4,6 +4,7 @@
   <head>
     <title>Java Quiz</title>
     <meta name="description" content="This is a Java quiz web page" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -113,14 +114,16 @@
           <img src="./assets/heranca.jpg" alt="A diagram showing an Animal class being extended by Horse and Lion"><br>
           <figcaption>A image of a diagram showing an Animal class being extended by Horse and Lion</figcaption>
         </figure>
-        <input type="radio" value="Encapsulation" id="p8a" name="question8"/>
-        <label for="p8a">Encapsulation</label><br>
-        <input type="radio" value="Inheritance" id="p8b" name="question8"/>
-        <label for="p8b">Inheritance</label><br>
-        <input type="radio" value="Polymorphism" id="p8c" name="question8"/>
-        <label for="p8c">Polymorphism</label><br>
-        <input type="radio" value="Abstraction" id="p8d" name="question8"/>
-        <label for="p8d">Abstraction</label>
+        <form>
+          <input type="radio" value="Encapsulation" id="p8a" name="question8"/>
+          <label for="p8a">Encapsulation</label><br>
+          <input type="radio" value="Inheritance" id="p8b" name="question8"/>
+          <label for="p8b">Inheritance</label><br>
+          <input type="radio" value="Polymorphism" id="p8c" name="question8"/>
+          <label for="p8c">Polymorphism</label><br>
+          <input type="radio" value="Abstraction" id="p8d" name="question8"/>
+          <label for="p8d">Abstraction</label>
+        </form>
       </section>
       <!--Scoring Table-->
       <section>
@@ -158,8 +161,50 @@
         </table>
       </section>
       <!--List of answers-->
-      
+      <section>
+        <h2>List of Answers</h2>
+        <details>
+          <summary>Click here to see the answers.</summary>
+          <ol>
+            <li>An object-oriented and cross-platform programming language.</li>
+            <li>
+              The JVM (Java Virtual Machine) is a virtual machine responsible
+              for executing Java programs. It interprets the bytecode generated
+              after compiling the source code, allowing the program to run on
+              different operating systems without needing to be rewritten. Its
+              main role is to ensure Java portability, as well as manage
+              resources such as memory, security, and performance during
+              execution.
+            </li>
+            <li>Encapsulation</li>
+            <li>May 23, 1995</li>
+            <li>int, double, boolean</li>
+            <li>The file must be .java extension</li>
+            <li>For</li>
+            <li>Inheritance</li>
+          </ol>
+        </details>
+      </section>
+      <!--Feedback Form-->
+      <section>
+        <h2>Give us your feedback.</h2>
+        <form>
+          <fieldset>
+            <legend>Contact information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" /><br/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" /><br/>
+            <label for="feedback">Feedback:</label><br/>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br/>
+            <button onclick="alert('FEEDBACK SENT')">Submit Feedback</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p class="paragraph-footer">&copy; 2026 Java Quiz. All rights reserved.</p>
+      <p class="paragraph-footer">To see other quizzes, <a href="https://kahoot.com/pt-BR/home/kahoot-quiz-games/">click here.</a></p>
+    </footer>
   </body>
 </html>
